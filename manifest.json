@@ -1,0 +1,26 @@
+{
+  "manifest_version" : 2,
+  "name" : "QuokkaSays",
+  "version" : "1.0",
+  "description" : "appear messages, and sound when mouse moves to certain places on webpage",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches" : ["https://*/*"],
+      "js" : ["./main.js"],
+      "css" : ["./styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "resources/quokka.mp3",
+    "resources/say.wav",
+    "resources/say1.wav",
+    "resources/say2.wav",
+    "resources/say3.wav",
+    "resources/say4.wav",
+    "resources/say5.wav",
+    "resources/say6.wav",
+    "resources/say7.wav",
+    "resources/say8.wav"
+  ]
+}
